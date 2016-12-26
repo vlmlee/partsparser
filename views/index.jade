@@ -11,19 +11,19 @@ block content
         span.turns
         span.ellipsis
       div
-        .output
-          #output-text “VB DT NN”
+        .output 
+          #output-text “#[span.vb VB] #[span.dt DT] #[span.nn NN]”
       .key &#x21A1; tags
   .extra-content
     .about
       h1 Parts of Speech Parser
-      a(href="https://github.com/vlmlee/partsparser") View this project on github
-      p This is a quick parser using the pos-js tagger written by 
-        | #[a(href="https://github.com/oxtoacart") Percy Wegmann] that
-        | converts words into their parts of speech. The code for that module 
+      a(href="https://github.com/vlmlee/partsparser") &nbsp; &nbsp; View this project on github
+      p This is a fast parser that uses the pos-js tagger written by 
+        | #[a(href="https://github.com/oxtoacart") Percy Wegmann] to 
+        | convert words into their parts of speech. The code for Wegmann's module 
         | can be found #[a(href="https://github.com/neopunisher/pos-js") here].
       p The standard tags come from the #[a(href="https://cs.nyu.edu/grishman/jet/jet.1.8.0.html") Java Extraction Toolkit (JET)] 
-        | used for language analysis. There are defined as listed below:
+        | definitions used for language analysis. There are defined as listed below:
       .pos-list
         ul.section-pos-list
           li CC &nbsp;: Coordinating conjunction

@@ -54,7 +54,6 @@ a {
 
 .about a {
 	color: #666;
-	margin: 0 auto;
 	transition: color 0.5s;
 }
 
@@ -148,4 +147,16 @@ ul li {
     font-size: 40px;
     font-weight: bold;
     text-align: right;
+}
+
+.vb {
+    color: #3D9970;
+}
+
+.dt {
+    color: #85144b;
+}
+
+.nn {
+    color: #0074D9;
 }
