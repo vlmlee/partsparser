@@ -7,7 +7,7 @@
 
 body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-    background-color: #222c3f;
+    background-color: #EFF3F3;
     text-rendering: optimizeLegibility;
     text-rendering: geometricPrecision;
     -moz-font-smoothing: antialiased;
@@ -22,10 +22,16 @@ a {
     text-decoration: none;
 }
 
+.main-container {
+	width: 100%;
+	background-color: #222c3f;
+}
+
 .main-content {
     width: 60%;
-    height: 625px;
-    margin: 280px auto 0;
+    height: 640px;
+    padding-top: 275px;
+    margin: 0 auto 0;
 }
 
 .extra-content {
@@ -35,7 +41,7 @@ a {
     font-family: 'Karla';
     font-weight: 300;
     font-size: 22px;
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .about {
@@ -53,6 +59,28 @@ a:hover {
     color: #428bca;
 }
 
+ul li {
+	list-style-type: none;
+}
+
+.pos-list {
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.section-pos-list {
+	display: inline-block;
+	width: 40%;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+@media (max-width: 900px) {
+	.section-pos-list {
+		width: 100%;
+	}
+}
+
 .message,
 .key {
     display: inline-block;
@@ -68,6 +96,12 @@ a:hover {
 
 .key {
     margin: 150px 0 0 0;
+}
+
+.mygithub {
+	margin: 30px 0;
+	font-size: 20px;
+	float: right;
 }
 
 #transform {
