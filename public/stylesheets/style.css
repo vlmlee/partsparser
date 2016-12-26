@@ -17,8 +17,12 @@ body {
 }
 
 a {
-    color: #00B7FF;
+	color: #222;
     text-decoration: none;
+}
+
+a:hover {
+	color: #444;
 }
 
 .main-content {
@@ -27,13 +31,18 @@ a {
     margin: 280px auto 0;
 }
 
-.about {
+.extra-content {
 	width: 100%;
 	height: 905px;
-	background-color: #fff;
+	background-color: #ECF0F1;
 }
 
-.message {
+.about {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.message, .key {
     display: inline-block;
     width: 100%;
     margin: 60px 0;
@@ -43,6 +52,10 @@ a {
     font-size: 28px;
     font-weight: 200;
     text-align: center;
+}
+
+.key {
+	margin: 150px 0 0 0;
 }
 
 #transform {

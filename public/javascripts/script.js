@@ -32,7 +32,7 @@ $(document).ready(function() {
         $.post('/transform', { "data": sentence }, (data) => {
             var output = data;
 
-            $('#output-text').html('“' + data + '”');
+            $('#output-text').html('“' + data.trim() + '”');
             $('.output').css("text-align", "left");
         });
 
