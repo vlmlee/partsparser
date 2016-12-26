@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .main-content
+    div
+      .entry
+        form#transform(action="/transform", method="post")
+          input#input(type="text", name="sentence", autocomplete="off", value="Enter a sentence")
+    .message
+      span.turns
+      span.ellipsis
+  
+    div
+      .output
+        #output-text “VB DT NN ”
