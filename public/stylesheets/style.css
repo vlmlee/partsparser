@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
-@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono|Source+Code+Pro|Karla');
 @font-face {
     font-family: 'Playfair Display';
     src: url('../fonts/PlayfairDisplay-Italic.ttf');
@@ -49,6 +48,10 @@ a {
     margin: 0 auto;
 }
 
+.about h1 {
+	margin: 20px 0;
+}
+
 .about a {
 	color: #666;
 	margin: 0 auto;
@@ -64,8 +67,10 @@ ul li {
 }
 
 .pos-list {
-	margin: 0 auto;
-	font-size: 20px;
+	font-family: 'Source Code Pro';
+	font-weight: bold;
+	margin: 35px auto;
+	font-size: 16px;
 }
 
 .section-pos-list {
@@ -99,7 +104,7 @@ ul li {
 }
 
 .mygithub {
-	margin: 30px 0;
+	margin: 30px 0 60px 0;
 	font-size: 20px;
 	float: right;
 }
