@@ -150,13 +150,18 @@ ul li {
 }
 
 .vb {
-    color: #3D9970;
+    color: #4C9F70;
 }
 
 .dt {
-    color: #85144b;
+    color: #FB5012;
 }
 
 .nn {
     color: #0074D9;
+}
+
+.error {
+    margin-left: 90px;
+    text-align: center;
 }

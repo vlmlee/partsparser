@@ -28,7 +28,10 @@ $(document).ready(function() {
         e.preventDefault();
         let $form = $(this),
             sentence = $form.find("input[name='sentence']").val();
-        if (sentence) {
+
+        if (sentence.split(" ").length >= 42) {
+        	$('#output-text').html('<p class="error">Your sentence is too long.</p>');
+        } else if (sentence) {
 	        $.post('/transform', { "data": sentence }, (data) => {
 	            $('#output-text').html('');
 	            let output = data.slice(0, -1).split(" ");
@@ -74,13 +77,13 @@ $(document).ready(function() {
 function whichPOS(pos) {
     switch (pos) {
         case 'CC':
-            $('<span style="color: white">CC</span>').appendTo($('#output-text'));
+            $('<span style="color: #E9DF00">CC</span>').appendTo($('#output-text'));
             break;
         case 'CD':
             $('<span style="color: #DDDDDD">CD</span>').appendTo($('#output-text'));
             break;
         case 'DT':
-            $('<span style="color: #85144b">DT</span>').appendTo($('#output-text'));
+            $('<span style="color: #FB5012">DT</span>').appendTo($('#output-text'));
             break;
         case 'EX':
             $('<span style="color: #C4E7D4">EX</span>').appendTo($('#output-text'));
@@ -110,7 +113,7 @@ function whichPOS(pos) {
             $('<span style="color: #0074D9">NN</span>').appendTo($('#output-text'));
             break;
         case 'NNS':
-            $('<span style="color: #B9C0DA">NNS</span>').appendTo($('#output-text'));
+            $('<span style="color: #03FCBA">NNS</span>').appendTo($('#output-text'));
             break;
         case 'NNP':
             $('<span style="color: #7FDBFF">NNP</span>').appendTo($('#output-text'));
@@ -152,7 +155,7 @@ function whichPOS(pos) {
             $('<span style="color: #70D6FF">UH</span>').appendTo($('#output-text'));
             break;
         case 'VB':
-            $('<span style="color: #3D9970">VB</span>').appendTo($('#output-text'));
+            $('<span style="color: #4C9F70">VB</span>').appendTo($('#output-text'));
             break;
         case 'VBD':
             $('<span style="color: #839788">VBD</span>').appendTo($('#output-text'));
