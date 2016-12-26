@@ -22,8 +22,8 @@ a {
 }
 
 .main-container {
-	width: 100%;
-	background-color: #222c3f;
+    width: 100%;
+    background-color: #222c3f;
 }
 
 .main-content {
@@ -49,12 +49,12 @@ a {
 }
 
 .about h1 {
-	margin: 20px 0;
+    margin: 20px 0;
 }
 
 .about a {
-	color: #666;
-	transition: color 0.5s;
+    color: #666;
+    transition: color 0.5s;
 }
 
 a:hover {
@@ -62,27 +62,27 @@ a:hover {
 }
 
 ul li {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 .pos-list {
-	font-family: 'Source Code Pro';
-	font-weight: bold;
-	margin: 35px auto;
-	font-size: 16px;
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+    margin: 35px auto;
+    font-size: 16px;
 }
 
 .section-pos-list {
-	display: inline-block;
-	width: 40%;
-	margin-left: 25px;
-	margin-right: 25px;
+    display: inline-block;
+    width: 40%;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 @media (max-width: 900px) {
-	.section-pos-list {
-		width: 100%;
-	}
+    .section-pos-list {
+        width: 100%;
+    }
 }
 
 .message,
@@ -103,9 +103,9 @@ ul li {
 }
 
 .mygithub {
-	margin: 30px 0 60px 0;
-	font-size: 20px;
-	float: right;
+    margin: 30px 0 60px 0;
+    font-size: 20px;
+    float: right;
 }
 
 #transform {
