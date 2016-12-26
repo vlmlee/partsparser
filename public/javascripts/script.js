@@ -33,7 +33,9 @@ $(document).ready(function() {
             var output = data;
 
             $('#output-text').html('“' + data + '”');
+            $('.output').css("text-align", "left");
         });
+
     });
 
     $(".turns").typed({
